@@ -1,3 +1,5 @@
+#Origin: https://groups.google.com/forum/#!topic/flir-lepton/FF7y0NKrMpU
+
 simple single thread webserver for displaying streaming 
 output via firefox and chrome browser similar to a security 
 web camera for the flir lepton module.
