@@ -1,0 +1,49 @@
+simple single thread webserver for displaying streaming 
+output via firefox and chrome browser similar to a security 
+web camera for the flir lepton module.
+
+Does not work with Internet Explorer.
+
+
+Once installed.
+
+sudo python web.py 
+
+
+starts a listener on port 8080 of your pi.
+
+
+
+Access vi firefox
+
+http://YourRaspberryIpAddress:8080 from your host machine.
+
+
+
+For chrome you will need to open the ChromeOnly.html and edit your 
+raspiberry ip address into it.  And then open the chromeonly.html from your desktop 
+as chrome needs additional help in working but can be made to work.
+
+
+THe exe's are compiled with 
+
+Raspberry pi b+ (512 meg edition).
+
+
+Wiring of the lepton is /dev/spidev0.1 which is ce1 (pin 26) ?
+
+Uses python and pil so you will have to have those installed.
+
+For other Models of pi assumed you can just remake the source code from the directories.
+
+Most of the code is original pure with some glue logic.  The only real difference is agc 
+enable/disable in the Lepton_I2C.cpp module.
+
+
+Im sure it can be made better but its food for thought.
+
+
+Cheers
+
+
+Ben
